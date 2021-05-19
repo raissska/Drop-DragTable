@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+table{
+    margin-top: 40px;
+}
+th {
+    font-size: 13px;
+    font-weight: normal;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid white;
+    color: #039;
+    padding: 8px;
+}
+td {
+    background: #e8edff;
+    border-bottom: 1px solid white;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 8px;
+}
+.black{
+    color: black;
+}
+tr:hover td {
+    background: #ccddff;
+}
+
+.loader {
+    margin-top: 50px;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

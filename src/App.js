@@ -28,8 +28,8 @@ function App() {
 
     useEffect(() => {
         const sum = fileList.map(f => f.amount);
-        const num = sum.reduce((a, b) => a + b, -1);
-        setAmount(num > 0 ? num : 0);
+        const num = sum.reduce((a, b) => a + b, 0);
+        setAmount(num);
     }, [fileList]);
 
     return (
